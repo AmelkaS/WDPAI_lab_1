@@ -1,0 +1,148 @@
+/* Podstawowe stylowanie */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 480px;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Stylizacja formularza */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"], select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+select {
+    color: gray;
+}
+
+select:valid {
+    color: black;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #7a5bf1;
+    box-shadow: 0 0 5px rgba(122, 91, 241, 0.5);
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.privacy-policy {
+    font-size: 0.85rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.privacy-policy a {
+    color:  #7a5bf1;
+    text-decoration: none;
+}
+
+.privacy-policy a:hover {
+    text-decoration: underline;
+}
+
+.submit-button {
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #6c5ce7;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #5a4dbb;
+}
+
+.team-list {
+    margin-top: 32px;
+}
+
+#team-members {
+    list-style: none;
+    padding: 0;
+}
+
+/* Lista członków zespołu */
+.team-members-item {
+    background-color: #fafafa;
+    padding: 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.team-members-item p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #e74c3c;
+    transition: color 0.3s ease;
+}
+
+.delete-button:hover {
+    color: #c0392b;
+}
+
+.gray-text {
+    color: #888;
+    font-size: 0.9rem;
+}

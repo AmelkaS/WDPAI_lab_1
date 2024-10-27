@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarzadzanie zespolem</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script defer type="application/javascript" src="logic.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Let's level up your brand, together</h1>
+        
+        <!-- Formularz dodawania członków zespołu -->
+        <form id="team-form" method="post">
+            <label for="first_name">First name</label>
+            <input type="text" id="first_name" name="first_name" placeholder="First name" required>
+
+            <label for="last_name">Last name</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Last name" required>
+
+            <label for="role">Role</label>
+
+            <select id="role" name="role" required>
+                <option value="" disabled selected>Role</option>
+                <option value="Manager">Manager</option>
+                <option value="Development Lead">Development Lead</option>
+                <option value="Product Designer">Product Designer</option>
+                <option value="CTO">CTO</option>
+            </select>
+            <label class="privacy-policy">
+                <input type="checkbox" id="privacy_policy" name="privacy_policy" required>
+                <span>You agree to our friendly <a href="#">privacy policy</a>.</span>
+            </label>
+
+            <button id="submit-button" type="submit" class="submit-button">SUBMIT</button>
+        </form>
+        <!-- Sekcja wyświetlania listy członków zespołu -->
+        <div class="team-list">
+            <ul id="team-members">
+                <!-- Lista członków będzie wypełniana dynamicznie -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
